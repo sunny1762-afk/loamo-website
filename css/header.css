@@ -5,7 +5,7 @@ header{
     box-sizing: border-box;
     transition: all 0.4s ease 0s;
     padding-bottom: 2rem;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px var(--pm-color-900);
     position: fixed;
     left: 0;
     top: 0;
@@ -82,7 +82,7 @@ header .sns li{
     }
     .header-smart{
         display: block;
-        box-shadow: 0 0 10px #ddd;
+        box-shadow: 0 0 10px var(--pm-color-900);
         position: fixed;
         z-index: 2000;
         left: 0;
@@ -108,8 +108,7 @@ header .sns li{
         height: 1.2rem;
     }
     .menu-top{
-        background-color: var(--pm-color-100);
-        box-shadow: 0 0 10px #ddd;
+        box-shadow: 0 0 10px var(--pm-color-900);
     }
     .menu-top .common-frame{
         display: flex;

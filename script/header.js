@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const btnMenu = document.querySelector(".btn-menu");
     const menuSmartHidden = document.querySelector(".menu-smart-hidden")
     const btnClose = document.querySelector(".btn-close");
-    const gnbSmartList = document.querySelector(".gnb-smart>li")
+    const gnbSmartList = document.querySelectorAll(".gnb-smart>li")
 
     btnMenu.addEventListener("click",()=>{
         menuSmartHidden.classList.add('on');
