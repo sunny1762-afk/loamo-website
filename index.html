@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <script src="./script/header.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <!-- 스마트 기기에서 보이는 메뉴 -->
@@ -176,7 +180,55 @@
      
      <!-- 전체 컨텐츠 -->
       <main>
+        <!-- 히어로 배너 -->
+         <!-- Slider main container -->
+        <div class="swiper hero-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="" alt="LOAMO">
+                    <img src="" alt="LOAMO">
+                    <img src="" alt="LOAMO">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
 
+        <script>
+            const heroSwiper = new Swiper('.hero-slider', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+        </script>
+        
       </main>
 </body>
 </html> 

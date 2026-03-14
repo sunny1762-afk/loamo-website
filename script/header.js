@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const menuSmartHidden = document.querySelector(".menu-smart-hidden")
     const btnClose = document.querySelector(".btn-close");
     const gnbSmartList = document.querySelectorAll(".gnb-smart>li")
+    // 2뎁스 메뉴 초기화
 
     btnMenu.addEventListener("click",()=>{
         menuSmartHidden.classList.add('on');
