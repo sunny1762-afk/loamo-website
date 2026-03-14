@@ -100,7 +100,7 @@ header .sns li{
     .header-smart .btn-menu{
         position: absolute;
         right: 0;
-        top: 50px;
+        top: 50%;
         transform: translateY(-50%);
         line-height: 0;
     }
