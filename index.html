@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- 스마트 기기에서 보이는 메뉴 -->
-     <div class="menu-smart-hidden maru">
+     <div class="menu-smart-hidden">
         <div class="menu-top">
             <div class="common-frame">
                 <div class="logo">
@@ -45,9 +45,9 @@
                         <span class="btn-more mo"><img src="./img/arrow-down.svg" alt="메뉴 더보기"></span>
                         <a href="#">CERAMICS</a>
                         <ul>
-                            <li><a href="#">Mugs</a></li>
                             <li><a href="#">Tableware</a></li>
                             <li><a href="#">Candles</a></li>
+                            <li><a href="#">Objet</a></li>
                         </ul>
                     </li>
                     <li>
@@ -102,7 +102,7 @@
 
      <!-- pc용 헤더 -->
     <header>
-        <div class="common-frame maru">
+        <div class="common-frame">
             <div class="logo">
                 <a href="#">
                     <img src="./img/logo.svg" alt="로아모 상단 로고">
@@ -118,10 +118,10 @@
                 </li>
                 <li>
                     <a href="#">CERAMICS</a>
-                    <ul>
-                        <li><a href="#">Mugs</a></li>
+                    <ul>                       
                         <li><a href="#">Tableware</a></li>
                         <li><a href="#">Candles</a></li>
+                        <li><a href="#">Objet</a></li>
                     </ul>
                 </li>
                 <li>
@@ -180,31 +180,30 @@
      
      <!-- 전체 컨텐츠 -->
       <main>
-        <!-- 히어로 배너 -->
-         <!-- Slider main container -->
+        <!-- 히어로배너 -->
+        <!-- Slider main container -->
         <div class="swiper hero-slider">
-            <!-- Additional required wrapper -->
+        <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="" alt="LOAMO">
-                    <img src="" alt="LOAMO">
-                    <img src="" alt="LOAMO">
+                    <img src="./img/slide1-pc.jpg" alt="LOAMO main banner" class="pc">
+                    <img src="" alt="LOAMO moonlight candle series banner" class="tab">
+                    <img src="" alt="LOAMO handmade craft banner" class="mo">
                 </div>
                 <div class="swiper-slide">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="./img/slide2-pc.jpg" alt="OAMO main banner" class="pc">
+                    <img src="./img/slide1-tab.jpg" alt="LOAMO moonlight candle series banner" class="tab">
+                    <img src="./img/slide2-mo.jpg" alt="LOAMO handmade craft banner" class="mo">
                 </div>
                 <div class="swiper-slide">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="./img/slide3-pc.jpg" alt="OAMO main banner" class="pc">
+                    <img src="./img/slide1-tab.jpg" alt="LOAMO moonlight candle series banner" class="tab">
+                    <img src="./img/slide3-mo.jpg" alt="LOAMO handmade craft banner" class="mo">
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="pagination"></div>
         </div>
-
         <script>
             const heroSwiper = new Swiper('.hero-slider', {
             // Optional parameters
@@ -228,7 +227,7 @@
             },
             });
         </script>
-        
-      </main>
+
+    </main>
 </body>
 </html> 
