@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/system.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./script/header.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -187,7 +188,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="./img/[pc]배너1-2.jpg" alt="LOAMO main banner" class="pc">
+                    <img src="./img/slide1-pc.jpg" alt="LOAMO main banner" class="pc">
                     <img src="./img/slide1-tab.jpg" alt="LOAMO moonlight candle series banner" class="tab">
                     <img src="./img/slide1-mo.jpg" alt="LOAMO handmade craft banner" class="mo">
                 </div>
@@ -228,6 +229,198 @@
             });
         </script>
 
+        <div class="story">
+            <div class="common-frame">               
+                <h1>OUR STORY</h1>
+                <div class="story-frame">
+                    <div class="txt-story">
+                        <h2>LOAMO Brand Story</h2>
+                        <h4>Meaningful Meals, Made Better</h4>
+                        <p>아무리 바쁜 날이라도 <br>제대로 담아 먹는 식사는 <br>하루를 다르게 느끼게 합니다.</p>
+                        <p>LOAMO는 그런 순간을 위해 <br>단순히 음식을 담는 그릇이 아니라, <br>한 끼의 시간을 더 소중하게 만드는 도자를 만듭니다.</p>
+                    </div>
+                    <figure class="img-story">
+                        <img src="./img/story.jpg" alt="로아모 오프라인 매장 이미지">
+                    </figure>
+                </div>
+                <div class="philo">
+                    <ul class="philo-list">                     
+                        <li>
+                            <h3>01.Meaningful</h3>
+                            <p class="fwb">Meaningful Dining</p>
+                            <p class="fwr">
+                                LOAMO는 음식을 담는 순간부터 식사가 달라진다고 믿습니다.한 끼의 시간을 더 의미 있게 완성할 수 있도록음식과 공간을 자연스럽게 돋보이게 하는 그릇을 만듭니다.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>02.Intentional</h3>
+                            <p class="fwb">Thoughtful Preparation</p>
+                            <p class="fwr">
+                                식사를 준비하는 과정까지 고려해 디자인합니다.음식을 담고, 테이블을 정리하고,차려 먹는 순간이 더 편안하고 자연스럽게 이어지도록균형과 사용성을 함께 담았습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>03.Everyday</h3>
+                            <p class="fwb">Everyday Living</p>
+                            <p class="fwr">
+                                특별한 날이 아니라 매일의 식사에 사용하기 위해 만들었습니다.일상 속에서 편하게 쓰면서도식탁의 분위기를 더 따뜻하게 만들어주는오래 함께할 수 있는 도자입니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-frame signature">
+            <div class="common-frame">
+                <h1>SIGNATURE</h1>
+                <p class="fwm">매일 사용하는 식사 환경에 맞춰 제작된 식기 시리즈</p>
+                <div class="swiper signature-slider">            
+                    <div class="swiper-wrapper">                   
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/signature1.jpg" alt="loamo signature plate">
+                            </figure>
+                            <h4>plate</h4>
+                            <p class="fwm">다양한 식사와 플레이팅에 활용 가능한 LOAMO 대표 기본접시</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/signature2.jpg" alt="loamo signature bowl">
+                            </figure>
+                            <h4>bowl</h4>
+                            <p class="fwm">매일 식사에 부담 없이 사용할 수 있도록 제작된 기본 식사용 보울</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/signature3.jpg" alt="loamo signature cup">
+                            </figure>
+                            <h4>cup</h4>
+                            <p class="fwm">차와 음료를 안정적으로 즐길 수 있도록 만든 실사용 중심 티컵</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/signature4.jpg" alt="loamo signature teapot">
+                            </figure>
+                            <h4>teapot</h4>
+                            <p class="fwm">편안한 차 준비와 일상적인 티타임에 맞춰 설계된 LOAMO 시그니처 주전자</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const signatureSlider = new Swiper(".signature-slider",{
+                        slidesPerView: 1.3, //화면에 보여질 슬라이드의 개수
+                        spaceBetween: 14, //슬라이드 사이 gap
+                        breakpoints:{
+                            400:{
+                                //400화면 너비보다 클 때 
+                                slidesPerView: 2.2,
+                                spaceBetween: 14,
+                            },
+                            768:{
+                                //768화면 너비보다 클 때 
+                                slidesPerView: 4,
+                                spaceBetween: 18,
+                            },
+                            1440:{
+                                //1440화면 너비보다 클 때
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            },
+                        } //반응형
+                    })
+                </script>
+            </div>
+        </div>
+       
+<div class="story-frame objets">
+            <div class="common-frame">
+                <h1>SIGNATURE</h1>
+                <p class="fwm">매일 사용하는 식사 환경에 맞춰 제작된 식기 시리즈</p>
+                <div class="swiper objets-slider">            
+                    <div class="swiper-wrapper">                   
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/objet1.jpg" alt="loamo tableware">
+                            </figure>
+                            <h4>tableware</h4>
+                            <p class="fwm">한 끼에 담긴 정성의 가치를 빛나게 해줄 로아모의 식기 컬렉션</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/objet2.jpg" alt="loamo vase">
+                            </figure>
+                            <h4>vase</h4>
+                            <p class="fwm">자연을 모티브로 자연스러움을 담아낸 화병 시리즈</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/objet3.jpg" alt="objets">
+                            </figure>
+                            <h4>objet</h4>
+                            <p class="fwm">공간의 분위기를 부드럽게 바꿔주는 조명 컬렉션</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./img/objet4.jpg" alt="loamo light">
+                            </figure>
+                            <h4>candle</h4>
+                            <p class="fwm">여백에 잔잔한 포인트를 더해 줄 캔들 시리즈</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const objets = new Swiper(".objets-slider",{
+                        slidesPerView: 1.3, //화면에 보여질 슬라이드의 개수
+                        spaceBetween: 14, //슬라이드 사이 gap
+                        breakpoints:{
+                            400:{
+                                //400화면 너비보다 클 때 
+                                slidesPerView: 2.2,
+                                spaceBetween: 14,
+                            },
+                            768:{
+                                //768화면 너비보다 클 때 
+                                slidesPerView: 4,
+                                spaceBetween: 18,
+                            },
+                            1440:{
+                                //1440화면 너비보다 클 때
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            },
+                        } //반응형
+                    })
+                </script>
+            </div>
+        </div>
+
+        <div class="franchise">
+            <div class="common-frame">
+                <h1>LOAMO는 파트너와 함께 공간을 설계합니다.</h1>
+                <p class="fwm">로아모의 감성을 공간으로 함께 풀어갈 파트너를 기다립니다.</p>
+                <a href="#" class="btn-style">가맹상담신청<img src="./img/arrow-btn.svg" alt="화살표"></a>
+                <h3>LOAMO를 선택해야 하는 이유</h3>
+                <ul class="why">
+                    <li>
+                        <p class="fwb">합리적인 창업비용</p>
+                        <p class="fwm">초기 투자 부담을 낮춤 현실적인 가맹 모델</p>
+                    </li>
+                    <li>
+                        <p class="fwb">디스플레이 가이드 제공</p>
+                        <p class="fwm">브랜드 톤에 맞는 진열 기준을 제공해 연출 부담을 줄입니다.</p>
+                    </li>
+                    <li>
+                        <p class="fwb">시즌별 신제품 제공</p>
+                        <p class="fwm">지속적인 신제품으로 공간의 신선도를 유지할 수 있습니다.</p>
+                    </li>
+                    <li>
+                        <p class="fwb">공간 맞춤 제품 구성</p>
+                        <p class="fwm">운영 공간의 성격에 맞는 제품 큐레이션을 지원합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 </body>
-</html> 
+</html>           

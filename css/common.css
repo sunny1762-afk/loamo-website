@@ -24,6 +24,15 @@ p{
 .b2{
     font-size:var(--fs-bd2);
 }
+.fwr{
+    font-weight: var(--fw-reg);
+}
+.fwm{
+    font-weight: var(--fw-med);
+}
+.fwb{
+    font-weight: var(--fw-bold);
+}
 .de{
     font-size:var(--fs-det);
 }
@@ -39,6 +48,19 @@ p{
     height: 1.2rem;
 }
 main{margin-top: 100px;}
+
+.btn-style{
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    align-items: center;
+    gap: var(--space-normal);
+    border: 1px solid white;
+    transition: all 0.3s ease 0s;
+}
+.btn-style:hover{
+    background-color: var(--pm-color-300);
+    color: white;
+}
 
 .mo{display: none;}
 .tab{display: none;}
