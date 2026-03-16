@@ -24,7 +24,7 @@
     height:0.8rem;
     border-radius: 50%;
 }
-.hero-slider .swiper-pagenation-bullet{
+.hero-slider .swiper-pagination-bullet{
     opacity: 1;
 }
 .story{
