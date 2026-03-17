@@ -39,6 +39,9 @@
 .story h1{
     margin-bottom: var(--space-2x-large);
 }
+.menu-frame{
+    margin-bottom: 6rem;
+}
 .story-frame h2{
     margin-bottom: var(--space-normal);
 }
@@ -55,10 +58,10 @@
     display: flex;
     gap: var(--space-normal);
 }
-.philo-list>li{
+.philo-list>li {
     flex: 1;
     /* border: 1px solid var(--pm-color-900); */
-    box-shadow: 0 0 10px var(--pm-color-900);
+    box-shadow: 0 0 20px rgba(135, 82, 14, 0.188);
     padding: var(--space-normal);
     border-radius: 15px;
 }

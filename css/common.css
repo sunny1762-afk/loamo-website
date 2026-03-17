@@ -2,6 +2,9 @@ html{
     font-family: 'Pretendard', sans-serif;
     font-size: var(--basic-font-pc);
 }
+main{
+    min-height: 60vh;
+}
 h1{
     font-size:var(--fs-h1);
     font-weight: var(--fw-bold);
@@ -60,8 +63,11 @@ main{margin-top: 100px;}
 .btn-style:hover{
     background-color: var(--pm-color-300);
     color: white;
+    border: 1px solid var(--pm-color-300);
 }
-
+.ptc{
+    color: var(--pm-color-900);
+}
 .mo{display: none;}
 .tab{display: none;}
 .pc{display: block;}
