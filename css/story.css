@@ -13,7 +13,7 @@
     margin-top: var(--space-3x-large);
 }
 .core h1{
-    font-size: 4rem;
+    font-size: 120px;
     line-height: 100%;
     text-align: center;
     margin-bottom: var(--space-normal);
@@ -60,9 +60,18 @@
 }
 @media(max-width:1440px){
     .sub-banner{height: 400px;}
-
+    .core h1{
+    font-size: 108px;
+    }
 }
 @media(max-width:768px){
     .sub-banner{height: 500px;}
-
+    .core h1{
+        font-size: 60px;
+        }
+}
+@media(max-width:280px){
+    .core h1{
+        font-size: 46px;
+    }
 }
