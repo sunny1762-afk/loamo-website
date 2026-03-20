@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand Story</title>
+    <title>Product list</title>
 
     <link rel="stylesheet" href="./css/font-maruburi.css">
     <link rel="stylesheet" href="./css/font-pretendard.css">
@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script src="./script/header.js"></script>
+    <script src="./script/heart.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="./css/story.css">
+    <link rel="stylesheet" href="./css/list.css">
     
 </head>
 <body>
-    <!-- 스마트 기기에서 보이는 메뉴 -->
+        <!-- 스마트 기기에서 보이는 메뉴 -->
      <div class="menu-smart-hidden">
         <div class="menu-top">
             <div class="common-frame">
@@ -49,8 +50,9 @@
                         <a href="#">CERAMICS</a>
                         <ul>
                             <li><a href="#">Tableware</a></li>
-                            <li><a href="#">Candles</a></li>
-                            <li><a href="#">Objet</a></li>
+                            <li><a href="#">Candle</a></li>
+                            <li><a href="#">Lamp</a></li>
+                            <li><a href="#">Home Deco</a></li>
                         </ul>
                     </li>
                     <li>
@@ -103,7 +105,7 @@
         </div>
      </div>
 
-    <!-- pc용 헤더 -->
+        <!-- pc용 헤더 -->
     <header>
         <div class="common-frame">
             <div class="logo">
@@ -123,8 +125,9 @@
                     <a href="#">CERAMICS</a>
                     <ul>                       
                         <li><a href="#">Tableware</a></li>
-                        <li><a href="#">Candles</a></li>
-                        <li><a href="#">Objet</a></li>
+                        <li><a href="#">Candle</a></li>
+                        <li><a href="#">Lamp</a></li>
+                        <li><a href="#">Home Deco</a></li>
                     </ul>
                 </li>
                 <li>
@@ -171,7 +174,7 @@
         </div>
     </header>
 
-    <!-- 스마트 기기용 헤더 -->
+     <!-- 스마트 기기용 헤더 -->
      <div class="header-smart">
         <div class="common-frame">
             <div class="logo">
@@ -180,125 +183,143 @@
             <span class="btn-menu"><img src="./img/btn-menu.svg" alt="전체메뉴버튼"></span>
         </div>
      </div>
+
      <main>
-        <!-- story -->
+        <!-- 서브 배너 -->
         <div class="sub-banner">
             <div class="common-frame">
-                <h1>LOAMO STORY</h1>
+                <h1>CERAMICS</h1>
             </div>
         </div>
 
-        <!-- core value -->
-         <div class="core">
+        <!-- 타이틀 -->
+        <div class="title">
             <div class="common-frame">
-                <h1>THE BEGINNING OF LOAMO</h1>
-                <p>
-                    LOAMO는 바쁜 일상 속에서 잠시 멈추는 순간을 위해 시작되었습니다.<br> 손에 닿는 도자기의 질감과 조용한 형태를 통해 <br> 일상의 순간을 더 깊게 느낄 수 있는 오브제를 만듭니다.
-                </p>
-                <div class="swiper core-swiper">
-                    <ul class="core-card swiper-wrapper">
-                    <li class="swiper-slide">
-                        <h4>Material</h4>
-                        <p class="fwb">재료</p>
-                        <p class="fwr">도자기 고유의 질감과 자연스러운 형태를 존중하며 시간이 지나도 변하지 않는 물성을 담습니다.</p>
-                        <figure>
-                            <img src="./img/core-img.jpg" alt="코어이미지1">
-                        </figure>
-                        <ul class="core-check-list">
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Natural Clay</li>
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Raw Texture</li>
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Honest Surface</li>
-                        </ul>
-                        <p class="fwm">
-                            LOAMO는 도자기의 가장 본질적인 재료인 흙에서 시작됩니다. 우리는 이러한 자연스러운 물성을 그대로 존중하며 표면의 작은 흔적과 질감을 디자인의 일부로 받아들입니다.LOAMO의 오브제는 단순한 형태 속에서도 재료가 가진 따뜻함과 자연스러운 표정을 담아냅니다.
-                        </p>
-                    </li>
-                    <li class="swiper-slide">
-                        <h4>BALANCE</h4>
-                        <p class="fwb">균형</p>
-                        <p class="fwr">과한 장식보다 편안한 곡선과 안정적인 비율을 통해 오래 보아도 질리지 않는 디자인을 만듭니다.</p>
-                        <figure>
-                            <img src="./img/core-img.jpg" alt="코어이미지1">
-                        </figure>
-                        <ul class="core-check-list">
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Calm Design</li>
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Visual Harmony</li>
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Stable Proportion</li>
-                        </ul>
-                        <p class="fwm">
-                            부드러운 곡선과 안정적인 비율은 손에 쥐었을 때 자연스럽게 느껴지고 공간에 놓였을 때 편안한 분위기를 만듭니다. 눈에 띄기 위한 디자인이 아니라 오랫동안 함께할 수 있는 형태를 고민하며 시간이 지나도 질리지 않는 조용한 아름다움을 추구합니다.
-                        </p>
-                    </li>
-                    <li class="swiper-slide">
-                        <h4>MOMENT</h4>
-                        <p class="fwb">순간</p>
-                        <p class="fwr">LOAMO의 오브제는 차를 따르는 순간, 식탁 위의 시간처럼 작은 일상을 더욱 깊게 만듭니다.</p>
-                        <figure>
-                            <img src="./img/core-img.jpg" alt="코어이미지1">
-                        </figure>
-                        <ul class="core-check-list">
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Quiet Time</li>
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Table Scene</li>
-                            <li><img src="./img/check-mark.svg" alt="체크아이콘">Slow Living</li>
-                        </ul>
-                        <p class="fwm">
-                            LOAMO의 오브제는 단순히 사용하는 물건을 넘어 하루의 작은 순간들을 더욱 깊게 느끼도록 돕는 존재입니다. LOAMO는 모든 순간들이 조금 더 따뜻하고 편안하게 기억될 수 있도록 일상의 풍경에 자연스럽게 어울리는 오브제를 만듭니다.
-                        </p>
-                    </li>
-                </ul>
+                <h3>THE BLACK SERIES</h3>
+                <p>일상의 순간을 더 특별하게</p>
+            </div>
+        </div>
+
+        <!-- 옵션 -->
+         <div class="option">
+            <div class="common-frame">
+                <div class="total-view">
+                    <span>TOTAL</span>
+                    <span id="current-count" class="fwb">6</span>
                 </div>
-                <script>
-                    const coreSwiper = new Swiper(`.core-swiper`,{
-                        slidesPerView: 1.3,
-                        spaceBetween: 14,
-                        breakpoints:{
-                            768:{
-                                slidesPerView: 3,
-                                spaceBetween: 18,
-                            },
-                            1440:{
-                                slidesPerView: 3,
-                                spaceBetween: 20,
-                            }
-                        }
-                    })
-                </script>
+                <div>
+                    <select id="view-filter" class="b2">
+                        <option value="인기순">정렬기준</option>
+                        <option value="인기순">인기순</option>
+                        <option value="신상품">신상품</option>
+                        <option value="낮은가격순">낮은가격순</option>
+                        <option value="높은가격순">높은가격순</option>
+                    </select>
+                </div>
             </div>
          </div>
 
-         <!-- identity -->
-        <div class="identity">
+         <!-- 상품리스트 -->
+        <div class="list-wrap">
             <div class="common-frame">
-                <h1>OBJECTS FOR QUIET MOMENTS</h1>
-                <p>
-                    조용한 오후의 차 한 잔처럼 <br>LOAMO의 오브제는 일상의 순간을 <br>편안하고 따뜻한 분위기로 채웁니다.
-                </p>
-                <figure class="iden-img">
-                    <img src="./img/banner-identity.jpg" alt="로아모 매장 내부 사진">
-                </figure>
-                <div class="identity-desc">
-                    <div class="iden-left">
-                        <h5>Slow Objets <br>For Every Moments</h5>
-                        <p>
-                            LOAMO는 빠르게 지나가는 하루 속에서 잠시 멈추는 작은 순간을 위해 일상에 자연스럽게 어울리는 오브제를 만듭니다.
-                        </p>
-                    </div>
-                    <div class="iden-right">
-                        <p>
-                            LOAMO의 오브제는 바쁜 하루 속에서 잠시 멈추는 순간을 위해 만들어집니다.따뜻한 차를 따르는 시간, 조용한 식탁 위의 장면처럼 평범한 하루의 작은 순간들이 조금 더 깊게 느껴지도록 합니다. 우리는 일상의 풍경 속에 자연스럽게 어울리는 물건을 만듭니다.
-                        </p>
-                        <p>
-                            LOAMO의 오브제는 바쁜 하루 속에서 잠시 멈추는 순간을 위해 만들어집니다.따뜻한 차를 따르는 시간, 조용한 식탁 위의 장면처럼 평범한 하루의 작은 순간들이 조금 더 깊게 느껴지도록 합니다. 우리는 일상의 풍경 속에 자연스럽게 어울리는 물건을 만듭니다.
-                        </p>
-                        <p>
-                            특별한 날을 위한 물건이 아니라 매일 반복되는 일상을 위한 물건을 만들고 싶었습니다. 차 한 잔의 시간, 식탁 위의 작은 풍경처럼 LOAMO는 평범한 순간을 따뜻하게 채우는 오브제입니다.
-                        </p>
-                    </div>
-                </div>
+                <ul class="list-grid">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/list-bowl.jpg" alt="로아모 보울">
+                            </figure>
+                            <div class="list-option">
+                                <span class="btn-heart">
+                                    <img src="./img/heart-empty.svg" alt="좋아요 아이콘">
+                                </span>
+                            </div>
+                            <h4>Bowl</h4>
+                            <p class="fwm">일상의 식사를 깊이감 있게 완성하는 보울</p>
+                            <div class="price fwb">32,000원</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/list-bowl.jpg" alt="로아모 보울">
+                            </figure>
+                            <div class="list-option">
+                                <span class="btn-heart">
+                                    <img src="./img/heart-empty.svg" alt="좋아요 아이콘">
+                                </span>
+                            </div>
+                            <h4>Bowl</h4>
+                            <p class="fwm">일상의 식사를 깊이감 있게 완성하는 보울</p>
+                            <div class="price fwb">32,000원</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/list-bowl.jpg" alt="로아모 보울">
+                            </figure>
+                            <div class="list-option">
+                                <span class="btn-heart">
+                                    <img src="./img/heart-empty.svg" alt="좋아요 아이콘">
+                                </span>
+                            </div>
+                            <h4>Bowl</h4>
+                            <p class="fwm">일상의 식사를 깊이감 있게 완성하는 보울</p>
+                            <div class="price fwb">32,000원</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/list-bowl.jpg" alt="로아모 보울">
+                            </figure>
+                            <div class="list-option">
+                                <span class="btn-heart">
+                                    <img src="./img/heart-empty.svg" alt="좋아요 아이콘">
+                                </span>
+                            </div>
+                            <h4>Bowl</h4>
+                            <p class="fwm">일상의 식사를 깊이감 있게 완성하는 보울</p>
+                            <div class="price fwb">32,000원</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/list-bowl.jpg" alt="로아모 보울">
+                            </figure>
+                            <div class="list-option">
+                                <span class="btn-heart">
+                                    <img src="./img/heart-empty.svg" alt="좋아요 아이콘">
+                                </span>
+                            </div>
+                            <h4>Bowl</h4>
+                            <p class="fwm">일상의 식사를 깊이감 있게 완성하는 보울</p>
+                            <div class="price fwb">32,000원</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/list-bowl.jpg" alt="로아모 보울">
+                            </figure>
+                            <div class="list-option">
+                                <span class="btn-heart">
+                                    <img src="./img/heart-empty.svg" alt="좋아요 아이콘">
+                                </span>
+                            </div>
+                            <h4>Bowl</h4>
+                            <p class="fwm">일상의 식사를 깊이감 있게 완성하는 보울</p>
+                            <div class="price fwb">32,000원</div>
+                        </a>
+                    </li>
+                   
+                </ul>
             </div>
         </div>
      </main>
-    <!-- 푸터 -->
+
+     <!-- 푸터 -->
     <footer>
         <div class="common-frame">
             <div class="ft1">

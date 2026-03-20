@@ -1,0 +1,95 @@
+.sub-banner{
+    height: 600px;
+    background: url(../img/ceramics-sub-banner.jpg) no-repeat 50% 50% / cover;
+}
+.sub-banner .common-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+}
+.title{
+    margin-top: var(--space-3x-large);
+    margin-bottom: var(--space-large);
+}
+.title .common-frame{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+    align-items: center;
+}
+.option{
+    margin-bottom: var(--space-normal);
+}
+.option .common-frame{
+    display: flex;
+    justify-content: space-between; 
+}
+.total-view{
+    display: flex;
+    gap: var(--space-small);
+    align-items: center;
+}
+.list-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-3x-large) var(--space-normal);
+}
+#view-filter{
+    border: 1px solid black;
+    padding: 0.3rem 0.5rem;
+}
+.list-wrap{
+    margin-bottom: var(--space-3x-large);
+}
+.list-grid li figure{
+    margin-bottom: var(--space-normal);
+    line-height: 0;
+    overflow: hidden;
+}
+.list-grid li figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease 0s;
+}
+.list-grid li:hover figure img{
+    transform:scale(1.1)
+}
+.list-option{
+    margin-bottom: var(--space-small);
+}
+.list-grid li h4{
+    margin-bottom: var(--space-small);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-grid li p{
+    margin-bottom: var(--space-large);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: var(--fs-h2);
+}
+@media(max-width:1440px){
+    .sub-banner{
+        height: 400px;
+        background: url(../img/ceramics-sub-banner.jpg) no-repeat 50% 50% / cover;
+    }
+}
+@media(max-width:768px){
+    .sub-banner{
+        height: 700px;
+        background: url(../img/ceramics-sub-banner.jpg) no-repeat 47% 50% / cover;
+    }
+    .list-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
