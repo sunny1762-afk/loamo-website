@@ -1,5 +1,6 @@
 header{
-    background-color: white;
+    background-color: black;
+    color: white;
     max-height: 100px;
     overflow: hidden;
     box-sizing: border-box;
@@ -81,7 +82,7 @@ header .sns li{
         filter: blur(50px);
         opacity: 0;
         pointer-events:none;
-        transition:all 0.7s ease 0s;
+        transition:all 0.5s ease 0s;
 
         position:fixed;
         width: 100%;
@@ -98,7 +99,8 @@ header .sns li{
     }
     .header-smart{
         display: block;
-        background-color: white;
+        background-color: black;
+        color: white;
         box-shadow: 0 0 20px rgba(135, 82, 14, 0.188);
         position: fixed;
         z-index: 2000;
