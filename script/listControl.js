@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     listArray.forEach(item=>{
         result +=`
          <li>
-            <a href="#">
+            <a href="./detail.html?pid=${item.pid}">
                 <figure>
                     <img src="./img/${item.PThumbnail}" alt="${item.pName}">
                 </figure>
@@ -26,6 +26,5 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     //상품 개수를 데이터 갯수에 맞게 입력하는 코드
     document.querySelector("#current-count").innerHTML = listArray.length
-
 
 })
