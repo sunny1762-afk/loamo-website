@@ -61,7 +61,7 @@
 .philo-list>li {
     flex: 1;
     /* border: 1px solid var(--pm-color-900); */
-    box-shadow: 0 0 20px rgba(135, 82, 14, 0.188);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.188);
     padding: var(--space-normal);
     border-radius: 15px;
 }

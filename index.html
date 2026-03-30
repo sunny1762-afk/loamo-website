@@ -17,170 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="./style/index.css">
+    <script src="./script/include.js"></script>
 </head>
-<body>
-    <!-- 스마트 기기에서 보이는 메뉴 -->
-     <div class="menu-smart-hidden">
-        <div class="menu-top">
-            <div class="common-frame">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./img/logo.svg" alt="로아모 상단 로고">
-                    </a>
-                </div>
-                <span class="btn-close"><img src="./img/btn-close.svg" alt="전체메뉴닫기버튼"></span>
-            </div>
-        </div>
-        <div class="menu-content"> 
-            <div class="common-frame">
-                <ul class="gnb-smart">
-                    <li>
-                        <span class="btn-more mo"><img src="./img/arrow-down.svg" alt="메뉴 더보기"></span>
-                        <a href="#">LOAMO</a>
-                        <ul>
-                            <li><a href="#">About LOAMO</a></li>
-                            <li><a href="#">Craft Process</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="btn-more mo"><img src="./img/arrow-down.svg" alt="메뉴 더보기"></span>
-                        <a href="#">CERAMICS</a>
-                        <ul>
-                            <li><a href="#">Tableware</a></li>
-                            <li><a href="#">Candle</a></li>
-                            <li><a href="#">Lamp</a></li>
-                            <li><a href="#">Home Deco</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="btn-more mo"><img src="./img/arrow-down.svg" alt="메뉴 더보기"></span>
-                        <a href="#">COLLECTION</a>
-                        <ul>
-                            <li><a href="#">Signature</a></li>
-                            <li><a href="#">Limited</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="btn-more mo"><img src="./img/arrow-down.svg" alt="메뉴 더보기"></span>
-                        <a href="#">JOURNAL</a>
-                        <ul>
-                            <li><a href="#">Brand Story</a></li>
-                            <li><a href="#">Table Styling</a></li>
-                            <li><a href="#">Ceramic care</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="btn-more mo"><img src="./img/arrow-down.svg" alt="메뉴 더보기"></span>
-                        <a href="#">SUPPORT</a>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Shipping & Returns</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="menu-sns common-frame">
-            <ul class="sns">
-                <li>
-                    <a href="#">
-                        <img src="./img/sns-instar.svg" alt="로아모 인스타 바로가기">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/sns-twitter.svg" alt="로아모 트위터 바로가기">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/sns-youtube.svg" alt="로아모 유튜브 바로가기">
-                    </a>
-                </li>
-            </ul>
-        </div>
-     </div>
+<body> 
+    <div id="include-header"></div>
 
-     <!-- pc용 헤더 -->
-    <header>
-        <div class="common-frame">
-            <div class="logo">
-                <a href="#">
-                    <img src="./img/logo.svg" alt="로아모 상단 로고">
-                </a>
-            </div>
-            <ul class="gnb">
-                <li>
-                    <a href="#">LOAMO</a>
-                    <ul>
-                        <li><a href="#">About LOAMO</a></li>
-                        <li><a href="#">Craft Process</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">CERAMICS</a>
-                    <ul>                       
-                        <li><a href="#">Tableware</a></li>
-                        <li><a href="#">Candle</a></li>
-                        <li><a href="#">Lamp</a></li>
-                        <li><a href="#">Home Deco</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">COLLECTION</a>
-                    <ul>
-                        <li><a href="#">Signature</a></li>
-                        <li><a href="#">Limited</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">JOURNAL</a>
-                    <ul>
-                        <li><a href="#">Brand Story</a></li>
-                        <li><a href="#">Table Styling</a></li>
-                        <li><a href="#">Ceramic care</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">SUPPORT</a>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping & Returns</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="sns">
-                <li>
-                    <a href="#">
-                        <img src="./img/sns-instar.svg" alt="로아모 인스타 바로가기">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/sns-twitter.svg" alt="로아모 트위터 바로가기">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/sns-youtube.svg" alt="로아모 유튜브 바로가기">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- 스마트 기기용 헤더 -->
-     <div class="header-smart">
-        <div class="common-frame">
-            <div class="logo">
-                <img src="./img/logo.svg" alt="로아모 상단 로고">
-            </div>
-            <span class="btn-menu"><img src="./img/btn-menu.svg" alt="전체메뉴버튼"></span>
-        </div>
-     </div>
-     
      <!-- 전체 컨텐츠 -->
       <main>
         <!-- 히어로배너 -->
@@ -351,28 +192,28 @@
                     <div class="swiper-wrapper">                   
                         <div class="swiper-slide">
                             <figure>
-                                <img src="./img/objet1.jpg" alt="loamo tableware">
+                                <img src="./img/living-tableware.jpg" alt="loamo tableware">
                             </figure>
                             <h4>Tableware</h4>
                             <p class="fwm">일상과 공간의 분위기를 완성하는 라이프스타일 컬렉션</p>
                         </div>
                         <div class="swiper-slide">
                             <figure>
-                                <img src="./img/objet2.jpg" alt="loamo vase">
+                                <img src="./img/living-candle.jpg" alt="loamo candle">
                             </figure>
                             <h4>Candle</h4>
                             <p class="fwm">공간에 따뜻한 빛과 여유를 더하는 캔들</p>
                         </div>
                         <div class="swiper-slide">
                             <figure>
-                                <img src="./img/objet3.jpg" alt="objets">
+                                <img src="./img/living-lamp.jpg" alt="loamo lamp">
                             </figure>
                             <h4>Lamp</h4>
                             <p class="fwm">빛으로 완성하는 공간의 무드</p>
                         </div>
                         <div class="swiper-slide">
                             <figure>
-                                <img src="./img/objet4.jpg" alt="loamo light">
+                                <img src="./img/living-homedeco.jpg" alt="loamo home deco">
                             </figure>
                             <h4>Home Deco</h4>
                             <p class="fwm">공간에 감각을 더하는 섬세한 오브제</p>
@@ -433,110 +274,6 @@
         </div>
     </main>
 
-    <!-- 푸터 -->
-    <footer>
-        <div class="common-frame">
-            <div class="ft1">
-                <ul class="ft-menu">
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">이메일무단수집거부</a></li>
-                    <li class="ptc"><a href="#">개인정보처리방침</a></li>
-                </ul>
-                <ul class="sns">
-                    <li>
-                        <a href="#">
-                            <!-- <img src="./img/sns-instar.svg" alt="instargram 바로가기"> -->
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.0047 6.60928C9.02341 6.60928 6.61873 9.01396 6.61873 11.9952C6.61873 14.9765 9.02341 17.3812 12.0047 17.3812C14.9859 17.3812 17.3906 14.9765 17.3906 11.9952C17.3906 9.01396 14.9859 6.60928 12.0047 6.60928ZM12.0047 15.4968C10.0781 15.4968 8.5031 13.9265 8.5031 11.9952C8.5031 10.064 10.0734 8.49365 12.0047 8.49365C13.9359 8.49365 15.5062 10.064 15.5062 11.9952C15.5062 13.9265 13.9312 15.4968 12.0047 15.4968ZM18.8672 6.38896C18.8672 7.0874 18.3047 7.64522 17.6109 7.64522C16.9125 7.64522 16.3547 7.08271 16.3547 6.38896C16.3547 5.69521 16.9172 5.13271 17.6109 5.13271C18.3047 5.13271 18.8672 5.69521 18.8672 6.38896ZM22.4344 7.66397C22.3547 5.98115 21.9703 4.49053 20.7375 3.2624C19.5094 2.03428 18.0187 1.6499 16.3359 1.56553C14.6015 1.46709 9.4031 1.46709 7.66873 1.56553C5.9906 1.64521 4.49998 2.02959 3.26716 3.25771C2.03435 4.48584 1.65466 5.97646 1.57029 7.65928C1.47185 9.39365 1.47185 14.5921 1.57029 16.3265C1.64998 18.0093 2.03435 19.4999 3.26716 20.728C4.49998 21.9562 5.98591 22.3405 7.66873 22.4249C9.4031 22.5233 14.6015 22.5233 16.3359 22.4249C18.0187 22.3452 19.5094 21.9608 20.7375 20.728C21.9656 19.4999 22.35 18.0093 22.4344 16.3265C22.5328 14.5921 22.5328 9.39834 22.4344 7.66397ZM20.1937 18.1874C19.8281 19.1062 19.1203 19.814 18.1969 20.1843C16.814 20.7327 13.5328 20.6062 12.0047 20.6062C10.4765 20.6062 7.1906 20.728 5.81248 20.1843C4.89373 19.8187 4.18591 19.1108 3.8156 18.1874C3.26716 16.8046 3.39373 13.5233 3.39373 11.9952C3.39373 10.4671 3.27185 7.18115 3.8156 5.80303C4.18123 4.88428 4.88904 4.17646 5.81248 3.80615C7.19529 3.25771 10.4765 3.38428 12.0047 3.38428C13.5328 3.38428 16.8187 3.2624 18.1969 3.80615C19.1156 4.17178 19.8234 4.87959 20.1937 5.80303C20.7422 7.18584 20.6156 10.4671 20.6156 11.9952C20.6156 13.5233 20.7422 16.8093 20.1937 18.1874Z" fill="black"/>
-                            </svg>
-                            <!-- 이미지 선택 -> open with -> text editor -> 이미지태그 지우기-> url 복붙 -> css선택자 fill:color -->
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <!-- <img src="./img/sns-twitter.svg" alt="twitter 바로가기"> -->
-                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.533 7.11175C21.5482 7.32494 21.5482 7.53817 21.5482 7.75136C21.5482 14.2539 16.599 21.7463 7.5533 21.7463C4.76648 21.7463 2.17767 20.9391 0 19.5382C0.395953 19.5838 0.776625 19.5991 1.18781 19.5991C3.48727 19.5991 5.60405 18.8224 7.29441 17.4976C5.13197 17.4519 3.31978 16.0356 2.69541 14.0864C3 14.132 3.30455 14.1625 3.62437 14.1625C4.06598 14.1625 4.50764 14.1016 4.91878 13.995C2.66498 13.5381 0.974578 11.5585 0.974578 9.16759V9.1067C1.62937 9.47219 2.39086 9.70061 3.19791 9.73103C1.87303 8.84777 1.00505 7.34017 1.00505 5.63458C1.00505 4.72089 1.24866 3.88333 1.67508 3.15236C4.09641 6.13713 7.73602 8.08633 11.8172 8.29956C11.7411 7.93408 11.6954 7.55341 11.6954 7.17269C11.6954 4.462 13.8883 2.25391 16.6141 2.25391C18.0304 2.25391 19.3095 2.84781 20.208 3.8072C21.3197 3.59402 22.3857 3.18283 23.3299 2.61939C22.9643 3.76155 22.1877 4.72094 21.1674 5.33003C22.1573 5.22348 23.1167 4.94931 23.9999 4.56864C23.33 5.54322 22.4924 6.4112 21.533 7.11175Z" fill="black"/>
-                        </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <!-- <img src="./img/sns-youtube.svg" alt="youtube 바로가기"> -->
-                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.9023 6.50346C22.6406 5.51804 21.8695 4.74196 20.8904 4.47858C19.1159 4 12 4 12 4C12 4 4.88415 4 3.10953 4.47858C2.13048 4.742 1.3594 5.51804 1.09769 6.50346C0.622192 8.28958 0.622192 12.0162 0.622192 12.0162C0.622192 12.0162 0.622192 15.7427 1.09769 17.5289C1.3594 18.5143 2.13048 19.258 3.10953 19.5214C4.88415 20 12 20 12 20C12 20 19.1158 20 20.8904 19.5214C21.8695 19.258 22.6406 18.5143 22.9023 17.5289C23.3778 15.7427 23.3778 12.0162 23.3778 12.0162C23.3778 12.0162 23.3778 8.28958 22.9023 6.50346ZM9.67269 15.3996V8.63271L15.6202 12.0162L9.67269 15.3996Z" fill="black"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ft2">
-                <ul class="f-gnb b2">
-                    <li>
-                        <a href="#">LOAMO</a>
-                        <ul>
-                            <li><a href="#">About LOAMO</a></li>
-                            <li><a href="#">Craft Process</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">CERAMICS</a>
-                        <ul>                       
-                            <li><a href="#">Tableware</a></li>
-                            <li><a href="#">Candles</a></li>
-                            <li><a href="#">Objet</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">COLLECTION</a>
-                        <ul>
-                            <li><a href="#">Signature</a></li>
-                            <li><a href="#">Limited</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">JOURNAL</a>
-                        <ul>
-                            <li><a href="#">Brand Story</a></li>
-                            <li><a href="#">Table Styling</a></li>
-                            <li><a href="#">Ceramic care</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">SUPPORT</a>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Shipping & Returns</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="ft3">
-                <div class="cinfo">
-                    <dl class="cinfo-list b2">
-                        <dt>상호명</dt>
-                        <dd>LOAMO CERAMICS</dd>
-                        <dt>대표자</dt>
-                        <dd>정서현</dd>
-                        <dt>사업자등록번호</dt>
-                        <dd>서울특별시 강남구 로아모로 123</dd>
-                        <dt>주소</dt>
-                        <dd>123-45-6780</dd>
-                        <dt>대표번호</dt>
-                        <dd>02-123-4567</dd>
-                        <dt>이메일</dt>
-                        <dd>hello@loamo.com</dd>
-                    </dl>
-                </div>
-                <div class="flogo">
-                    <a href="#">
-                        <img src="./img/logo-footer.svg" alt="LOAMO 하단 로고">
-                    </a>
-                </div>
-            </div>
-            <div class="ft4 b2">© 2026 LOAMO 취업용도의 포트폴리오 웹사이트입니다.</div>
-        </div> 
-    </footer>
+    <div id="include-footer"></div>
 </body>
 </html>           
