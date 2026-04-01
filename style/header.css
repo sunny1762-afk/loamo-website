@@ -51,7 +51,7 @@ header .sns li{
     opacity: 0;
     width: 0;
     height: 3px;
-    background-color: var(--pm-color-900);
+    background-color: white;
     transition: all .4s ease 0s;
 }
 .gnb>li>a:hover::before{
@@ -101,7 +101,7 @@ header .sns li{
         display: block;
         background-color: black;
         color: white;
-        box-shadow: 0 0 20px rgba(135, 82, 14, 0.188);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.188);
         position: fixed;
         z-index: 2000;
         left: 0;
@@ -127,7 +127,7 @@ header .sns li{
         height: 1.2rem;
     }
     .menu-top{
-        box-shadow: 0 0 20px rgba(135, 82, 14, 0.188);
+        box-shadow: 0 0 10px rgba(250, 248, 247, 0.336);
     }
     .menu-top .common-frame{
         display: flex;

@@ -14,9 +14,9 @@ async function includeHTML(selector, url, callback) {
     }
 }
 
-// DOMContentLoaded 이벤트에서 헤더 로드
+// DOMContentLoaded 이벤트에서 헤더와 푸터 로드
 document.addEventListener('DOMContentLoaded', () => {
-    includeHTML('#include-header', './header.html');
+    includeHTML('#include-header', './header.html', header);
     includeHTML('#include-footer', './footer.html');
    
 });
