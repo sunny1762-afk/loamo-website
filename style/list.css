@@ -43,10 +43,11 @@
 .list-wrap{
     margin-bottom: var(--space-3x-large);
 }
-.list-grid li figure{
+.list-grid li figure {
     margin-bottom: var(--space-normal);
     line-height: 0;
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 .list-grid li figure img{
     width: 100%;

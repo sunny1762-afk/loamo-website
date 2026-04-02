@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     listArray.forEach(item=>{
         result +=`
          <li>
-            <a href=".detail.html?pid=${item.pid}">
+            <a href="./detail.html?pid=${item.pid}">
                 <figure>
-                    <img src="./img/${item.PThumbnail}" alt="${item.pName}">
+                    <img src="./img/${item.pThumbnailNoBg}" alt="${item.pName}">
                 </figure>
                 <div class="list-option">
                     <span class="btn-heart">
