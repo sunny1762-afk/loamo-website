@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     </dl>
                     <ul class="btns-buy">
                         <li>
-                            <a href="#">
+                            <a href="#" class="btn-heart">
                                 <img src="./img/heart-empty.svg" alt="관심상품등록">
                             </a>
                         </li>
