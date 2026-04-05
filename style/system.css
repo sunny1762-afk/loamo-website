@@ -19,17 +19,17 @@
     --fw-bold:800;
 
     /* 색상 */
-    --pm-color-0:#FFFBF5;
-    --pm-color-100:#FDE5C5;
-    --pm-color-200:#F9CF98;
-    --pm-color-300:#F2BA70;
-    --pm-color-400:#E9A750;
-    --pm-color-500:#DD9638;
-    --pm-color-600:#CD8527;
-    --pm-color-700:#B8741B;
-    --pm-color-800:#A06313;
-    --pm-color-900:#87520E;
-
+    --pm-color-0:#FFFFF5;
+    --pm-color-100:#FDFBC5;
+    --pm-color-200:#FF9F598;
+    --pm-color-300:#F2EE70;
+    --pm-color-400:#E9E450;
+    --pm-color-500:#DDD738;
+    --pm-color-600:#CDC727;
+    --pm-color-700:#B8B31B;
+    --pm-color-800:#A09B13;
+    --pm-color-900:#747106;
+    --pm-color-point:#1F2A24;
     /* 여백 */
     --space-2x-small:0.125rem;
     --space-x-small:0.25rem;

@@ -1,36 +1,59 @@
 body{
-    background-color: #FFF5E8;
+    background-color: var(--pm-color-0);
 }
 .sub-banner{
-    width: auto;
     height: 600px;
-    background: url(../img/sub-banner-process.jpg) no-repeat 50% 50% / cover
+    background: url(../img/sub-banner-process.jpg) no-repeat 50% 50% / cover;
 }
-.sub-banner h1{
-    color: white;
+.sub-banner .common-frame{
     display: flex;
-    height: 600px;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
+    color: white;
+    height: 100%;
+}
+.process-list .common-frame{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-large);
+}
+.process-list{
+    margin-bottom: var(--space-3x-large);
 }
 .process-intro{
-    text-align: center;
     margin-top: var(--space-3x-large);
+    text-align: center;
+    margin-bottom: var(--space-3x-large);
 }
 .process-intro p{
     margin-top: var(--space-small);
 }
-.process-list{
-    margin-top: var(--space-3x-large);
-    display: flex;
-    flex-direction: column;
-}
 .process-item{
+    display: flex;
+    gap: var(--space-normal);
+}
+.process-item figure{
     flex: 1;
 }
-.process-list .content-wrap{
+.process-item .text-box{
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.pi{flex: 1;}
-.text-box{flex: 1;}
+.process-item .text-box .ko{
+    margin-top: var(--space-normal);
+}
+.process-item .text-box .en{
+    margin-top: var(--space-small);
+}
+@media(max-width:990px){
+    .process-item{
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-normal);
+    }
+    .process-list h4{
+        margin-top: var(--space-large);
+    }
+}

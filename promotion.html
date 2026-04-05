@@ -1,38 +1,126 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promotion</title>
-
     <script src="./script/head-common.js"></script>
 
-    <link rel="stylesheet" href="./style/font-pretendard.css">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/system.css">
-    <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/header.css">
-    <link rel="stylesheet" href="./style/footer.css">
     <script src="./script/header.js"></script>
     <script src="./script/heart.js"></script>
     <script src="./script/toWon.js"></script>
     <script src="./script/getParam.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <!-- <script src="./script/listControl.js"></script> -->
-    <!-- <script src="./script/detail-recommend.js"></script> -->
-
+    <link rel="stylesheet" href="./style/promotion.css">
     <script src="./script/include.js"></script>
-
 </head>
 <body>
 
     <div id="include-header"></div>
 
-    <main>
-
+     <main>
+        <div class="sub-banner">
+            <div class="common-frame">
+                <h1>PROMOTION</h1>
+            </div>
+        </div>
+        <div class="event1">
+            <div class="common-frame">
+                <h3>이벤트</h3>
+                <p>로아모가 전하는 작은 선물</p>
+                <div class="event1-content">
+                    <div class="event1-img-slider">
+                        <div class="swiper event1-img-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slider1.jpg" alt="수저받침 증정 이벤트">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slider2.jpg" alt="SNS 팔로우 & 리뷰 이벤트">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slider3.jpg" alt="오프라인 팝업 이벤트">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event1-txt-slider">
+                        <div class="swiper event1-txt-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h4>수저받침 증정 이벤트</h4>
+                                    <p>100,000원 이상 구매 시 로아모의 수저받침을 함께 드립니다. (선착순, 소진 시 종료)</p>
+                                    <p class="b2 fwm">일상의 작은 순간을 조금 더 깊게 느껴보세요. 로아모는 그 순간을 위해 만들어집니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>SNS 팔로우 & 리뷰 이벤트</h4>
+                                    <p>LOAMO 공식 인스타그램 팔로우 후 구매 제품 리뷰 작성 시 5,000원 쿠폰 제공</p>
+                                    <p class="b2 fwm">LOAMO의 신제품, 이벤트, 감성 콘텐츠를 가장 먼저 만나보세요. 팔로우 한 번으로 더 많은 혜택을 누릴 수 있습니다. 지금 바로 참여하고 5,000원 쿠폰 혜택을 받아보세요.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>오프라인 팝업 이벤트</h4>
+                                    <p>팝업 방문 고객 대상 전 제품 최대 15% 할인</p>
+                                    <p class="b2 fwm">LOAMO 팝업 스토어를 방문해주신 고객님께 전 제품을 최대 15% 할인된 가격으로 만나보실 수 있는 특별한 혜택을 제공합니다. 현장에서만 경험할 수 있는 분위기와 함께, 일상에 스며드는 오브제를 직접 느껴보세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const event1ImgSlider = new Swiper(".event1-img-swiper",{
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                speed:1000
+            })
+            const event1TxtSlider = new Swiper(".event1-txt-swiper",{
+                effect: "fade",
+                speed:1000
+            })
+            event1ImgSlider.on('slideChange', function () {
+                // console.log(event1ImgSlider.realIndex);
+                event1TxtSlider.slideTo(event1ImgSlider.realIndex, 1000)
+            });
+        </script>
+        <div class="event2">
+            <div class="common-frame">
+                <h3>진행 중인 이벤트</h3>
+                <ul class="event-grid">
+                    <li>
+                        <figure>
+                            <img src="./img/event2.jpg" alt="LOAMO 공식 인스타그램 팔로우 후 구매 제품 리뷰 작성 시 5,000원 쿠폰 제공">
+                        </figure>
+                        <h4>SNS 팔로우 & 리뷰 이벤트</h4>
+                        <p>LOAMO 공식 인스타그램 팔로우 후 구매 제품 리뷰 작성 시 5,000원 쿠폰 제공</p>
+                    </li>
+                    
+                    <li>
+                        <figure>
+                            <img src="./img/event3.jpg" alt="신규 회원 가입 시 첫 구매 10% 할인 쿠폰 제공">
+                        </figure>
+                        <h4>신규 회원 이벤트</h4>
+                        <p>신규 회원 가입 시 첫 구매 10% 할인 쿠폰 제공</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event4.jpg" alt="시그니처 블랙 시리즈 세트 구매 시 10% 할인 혜택 제공">
+                        </figure>
+                        <h4>세트상품 할인 이벤트</h4>
+                        <p>시그니처 블랙 시리즈 세트 구매 시 10% 할인 혜택 제공</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event5.jpg" alt="팝업 방문 고객 대상 최대 15% 할인">
+                        </figure>
+                        <h4>오프라인 팝업 이벤트</h4>
+                        <p>팝업 방문 고객 대상 최대 15% 할인</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
     <div id="include-footer"></div>
 </body>

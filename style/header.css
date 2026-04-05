@@ -6,7 +6,7 @@ header{
     box-sizing: border-box;
     transition: all 0.4s ease 0s;
     padding-bottom: 2rem;
-    box-shadow: 0 0 20px rgba(135, 82, 14, 0.188);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.074);
     position: fixed;
     left: 0;
     top: 0;
@@ -51,7 +51,7 @@ header .sns li{
     opacity: 0;
     width: 0;
     height: 3px;
-    background-color: white;
+    background-color: var(--pm-color-900);
     transition: all .4s ease 0s;
 }
 .gnb>li>a:hover::before{
@@ -127,7 +127,7 @@ header .sns li{
         height: 1.2rem;
     }
     .menu-top{
-        box-shadow: 0 0 10px rgba(250, 248, 247, 0.336);
+        box-shadow: 0 0 10px rgba(116, 112, 6, 0.299);
     }
     .menu-top .common-frame{
         display: flex;
@@ -171,6 +171,11 @@ header .sns li{
     }
 }
 @media(max-width:768px){
+
+    .menu-top .logo{
+        display: block;
+        margin: 0 auto;
+    }
     .gnb-smart{
         display: grid;
         grid-template-columns: repeat(1,1fr);

@@ -1,6 +1,7 @@
 .sub-banner{
     height: 600px;
     background: url(../img/sub-banner-story.jpg) no-repeat 50% 50% / cover;
+    background-position-y: 74%;
 }
 .sub-banner .common-frame{
     height: 100%;
@@ -12,8 +13,14 @@
 .core{
     margin-top: var(--space-3x-large);
 }
+.sub-title{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-bd1);
+    margin-bottom: var(--space-normal);
+    text-align: center;
+}
 .core h1{
-    font-size: 120px;
+    font-size: 60px;
     line-height: 100%;
     text-align: center;
     margin-bottom: var(--space-normal);
@@ -28,6 +35,7 @@
     padding: var(--space-large);
     box-sizing: border-box;
     box-shadow: 0 0 20px rgba(135, 82, 14, 0.188);
+    text-align: center;
 }
 .core-card>li>h4{
     margin-bottom: var(--space-small);
@@ -48,12 +56,12 @@
 .core-check-list{
     text-align: left;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap:var(--space-small);
 }
 .core-check-list li{
     display: flex;
-    gap: var(--space-small);
+    gap: var(--space-x-small);
 }
 .core-check-list img{
     width: 1.2rem;
@@ -67,6 +75,7 @@
 }
 .identity h1+p{
     text-align: center;
+    font-weight: var(--fw-bold);
     margin-bottom: var(--space-large);
 }
 .identity .iden-img{
@@ -76,6 +85,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 63%;
 }
 .identity-desc{
     display: flex;
@@ -99,11 +109,13 @@
     flex-direction: column;
     gap: var(--space-large);
 }
-
+.moment{
+    color: var(--pm-color-900);
+}
 @media(max-width:1440px){
     .sub-banner{height: 400px;}
     .core h1{
-    font-size: 108px;
+    font-size: 50px;
     }
     .identity-desc > div:nth-of-type(1){
         flex: 4;
@@ -118,11 +130,17 @@
         width: 80%;
     }
 }
+@media(max-width:1041px){
+   .core-check-list{
+    display: flex;
+    flex-direction: column;
+   }
+}
 
 @media(max-width:768px){
     .sub-banner{height: 500px;}
     .core h1{
-    font-size: 60px;
+    font-size: 40px;
     }
     .identity-desc{
     flex-direction: column;
@@ -136,6 +154,9 @@
         font-size: 30px;
     }
 }
+@media(max-width:492px){
+    .sub-banner h1{color: var(--pm-color-point);}
+}
 @media(max-width:370px){
     iden-left h5+p{
         width: auto;
@@ -143,7 +164,6 @@
 }
 @media(max-width:280px){
     .core h1{
-        font-size: 46px;
+        font-size: 20px;
     }
-
 }

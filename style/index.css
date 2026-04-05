@@ -27,8 +27,14 @@
 .hero-slider .swiper-pagination-bullet{
     opacity: 1;
 }
+.pagination>span.swiper-pagination-bullet-active {
+    background: var(--pm-color-900);
+}
 .story{
     margin: var(--space-3x-large) 0;
+}
+.story h1{
+    margin-bottom: var(--space-2x-large);
 }
 .story-frame{
     display: flex;
@@ -36,12 +42,6 @@
 }
 .txt-story{flex: 5;}
 .img-story{flex: 7;}
-.story h1{
-    margin-bottom: var(--space-2x-large);
-}
-.menu-frame{
-    margin-bottom: 6rem;
-}
 .story-frame h2{
     margin-bottom: var(--space-normal);
 }
@@ -58,31 +58,34 @@
     display: flex;
     gap: var(--space-normal);
 }
-.philo-list>li {
+.philo-list>li{
     flex: 1;
-    /* border: 1px solid var(--pm-color-900); */
     box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.188);
     padding: var(--space-normal);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .philo-list>li h3{
     margin-bottom: var(--space-large);
 }
+
 .philo-list>li h3+p:nth-of-type(1){
     margin-bottom: var(--space-normal);
 }
-.story-frame h1{
+.menu-frame{
+    margin-bottom: var(--space-3x-large);
+}
+.menu-frame figure img{
+    object-fit: cover;
+}
+.menu-frame h1{
     margin-bottom: var(--space-small);
 }
-.story-frame h1+p{
+.menu-frame h1+p{
     margin-bottom: var(--space-x-large);
 }
-.story-frame .swiper-slide h4{
+.menu-frame .swiper-slide h4{
     margin-top: 1.5rem;
     margin-bottom: var(--space-small);
-}
-.story-frame{
-    margin-bottom: var(--space-3x-large);
 }
 
 .franchise{
