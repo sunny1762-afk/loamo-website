@@ -19,6 +19,9 @@
 .product1 .common-frame>div{
     flex: 1 ;
 }
+.txt-pro{
+    margin-top: var(--space-large)
+}
 .txt-pro h1{
     font-size: 3rem;
     margin-bottom: var(--space-small);
