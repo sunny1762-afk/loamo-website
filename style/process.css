@@ -4,6 +4,7 @@ body{
 .sub-banner{
     height: 600px;
     background: url(../img/sub-banner-process.jpg) no-repeat 50% 50% / cover;
+    background-position-x: -235px;
 }
 .sub-banner .common-frame{
     display: flex;
