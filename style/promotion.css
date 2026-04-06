@@ -1,5 +1,5 @@
 .sub-banner{
-    height:400px;
+    height:600px;
     background: url("../img/sub-banner-promotion.jpg") no-repeat 50% 50% / cover;
 }
 .sub-banner .common-frame{
@@ -71,7 +71,7 @@
 
 @media (max-width:1440px){
     .sub-banner{
-        height:500px;
+        height:400px;
     }
     .event1-content{
         gap:var(--space-normal);
@@ -86,7 +86,7 @@
 
 @media (max-width:768px){
     .sub-banner{
-        height:600px;
+        height:700px;
         text-align: center;
     }
     .event1-content{

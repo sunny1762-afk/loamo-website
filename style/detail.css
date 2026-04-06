@@ -241,6 +241,14 @@
     flex-direction: column;
     gap: var(--space-small);
 }
+.likes{
+    display: flex;
+    gap: 0.25rem;
+}
+.likes img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
 .rev-desc{
     flex: 3;
 }

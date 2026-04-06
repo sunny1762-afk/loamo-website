@@ -2,9 +2,9 @@ body{
     background-color: var(--pm-color-0);
 }
 .sub-banner{
+    width: 100%;
     height: 600px;
     background: url(../img/sub-banner-process.jpg) no-repeat 50% 50% / cover;
-    background-position-x: -235px;
 }
 .sub-banner .common-frame{
     display: flex;
@@ -48,6 +48,11 @@ body{
 .process-item .text-box .en{
     margin-top: var(--space-small);
 }
+@media(max-width:1440px){
+    .sub-banner{
+        height: 400px;
+    }
+}
 @media(max-width:990px){
     .process-item{
         display: flex;
@@ -55,6 +60,12 @@ body{
         gap: var(--space-normal);
     }
     .process-list h4{
-        margin-top: var(--space-large);
+        margin-top: var(--space-small);
+    }
+}
+@media(max-width:768px){
+    .sub-banner{
+        height: 700px;
+        background-position-x: -235px;
     }
 }

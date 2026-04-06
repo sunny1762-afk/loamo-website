@@ -56,15 +56,17 @@
 .core-check-list{
     text-align: left;
     display: flex;
-    justify-content: center;
+    justify-content: center;;
     gap:var(--space-small);
 }
 .core-check-list li{
     display: flex;
+    align-items: center;
     gap: var(--space-x-small);
 }
 .core-check-list img{
-    width: 1.2rem;
+    width: .6rem;
+    height: .6rem;
 }
 .identity{
     margin: var(--space-3x-large) 0;
@@ -138,7 +140,13 @@
 }
 
 @media(max-width:768px){
-    .sub-banner{height: 500px;}
+    .sub-banner{
+        height: 700px;
+    }
+    .sub-banner h1{
+        color: var(--pm-color-point);
+        transform: translateY(-40px);
+    }}
     .core h1{
     font-size: 40px;
     }
@@ -153,7 +161,7 @@
     .iden-left>h5{
         font-size: 30px;
     }
-}
+
 @media(max-width:492px){
     .sub-banner h1{color: var(--pm-color-point);}
 }
