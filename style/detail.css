@@ -284,10 +284,11 @@
     }
 }
 @media(max-width:768px){
-    .product1 .common-frame{
-        flex-direction: column;
-        gap: var(--space-large);
-    } 
+.product1 .common-frame {
+    flex-direction: column;
+    gap: var(--space-large);
+    display: block;
+}
     .sell-info{
         display: grid;
         grid-template-columns: 1fr 1fr;
