@@ -48,7 +48,7 @@ body{
 .process-item .text-box .en{
     margin-top: var(--space-small);
 }
-@media(max-width:1440px){
+@media(max-width:1024px){
     .sub-banner{
         height: 400px;
     }
