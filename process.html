@@ -39,7 +39,7 @@
                 <figure>
                     <img src="./img/process1.jpg" alt="White Stoneware">
                 </figure>
-                <div class="text-box">
+                <div class="text-box slide-in">
                     <h4>White Stoneware</h4>
                     <p class="ko">
                         유럽산 화이트 스톤웨어는 안정적인 강도와 균일한 물성을 바탕으로, 형태의 완성도와 내구성을 동시에 확보할 수 있는 점토입니다. 은은한 색감과 미세한 텍스처를 자연스럽게 드러내며, LOAMO가 지향하는 차분한 분위기와 균형을 가장 잘 표현합니다.
@@ -54,7 +54,7 @@
                 <figure>
                     <img src="./img/process2.jpg" alt="Always By Hand">
                 </figure>
-                <div class="text-box">
+                <div class="text-box slide-in">
                     <h4>Made By Hand</h4>
                     <p class="ko">
                         물레 위에서 형태를 잡거나, 손으로 직접 빚어 형태를 만듭니다. 완벽하게 동일한 형태가 아닌, 미세한 차이를 가진 형태를 지향합니다.  손의 움직임이 그대로 형태로 남습니다.
@@ -65,11 +65,11 @@
                 </div>
             </div>
 
-            <div class="process-item">
+            <div class="process-item ">
                 <figure>
                     <img src="./img/process3.jpg" alt="First Firing">
                 </figure>
-                <div class="text-box">
+                <div class="text-box slide-in">
                     <h4>First Firing</h4>
                     <p class="ko">
                         가마에서 초벌을 진행합니다. 이는 두 번의 소성 중 첫 번째이며, 높은 온도 속에서 흙은 단단해지고, 형태가 고정됩니다. 불은 형태를 완성하는 첫 번째 과정입니다.
@@ -80,11 +80,11 @@
                 </div>
             </div>
 
-            <div class="process-item">
+            <div class="process-item ">
                 <figure>
                     <img src="./img/process4.jpg" alt="Signature Glazing">
                 </figure>
-                <div class="text-box">
+                <div class="text-box slide-in">
                     <h4>Signature Glazing</h4>
                     <p class="ko">
                         첫 번째 소성 후 완전히 고체형태가 되어 유약을 칠할 준비가 됩니다. 제품의 표면에 로아모만의 시그니처 유약을 입혀 색감과 질감을 더합니다. 유약의 흐름과 농도에 따라 각각 다른 표정이 만들어집니다.
@@ -99,7 +99,7 @@
                 <figure>
                     <img src="./img/process5.jpg" alt="Final Firing">
                 </figure>
-                <div class="text-box">
+                <div class="text-box slide-in">
                     <h4>Final Firing</h4>
                     <p class="ko">
                         다시 한 번 가마에 넣어 재벌을 진행합니다. 1240도의 고온의 시간 속에서 유약과 형태가 하나로 완성됩니다.
@@ -114,7 +114,7 @@
                 <figure>
                     <img src="./img/process6.jpg" alt="Packaging">
                 </figure>
-                <div class="text-box">
+                <div class="text-box slide-in">
                     <h4>Packaging</h4>
                     <p class="ko">
                         완성된 제품은 정성스럽게 포장됩니다. 형태와 두께를 고려해 개별 보호되며, 단순한 보호를 넘어 마지막 경험까지 이어집니다. 친환경적이고 미니멀한 패키징으로 인상을 남깁니다.
@@ -126,6 +126,23 @@
             </div> 
         </div>
       </div>
+
+      <script>
+        const slideIn = document.querySelectorAll(`.slide-in`);
+
+        function checkSlide(){
+            slideIn.forEach(item =>{
+                const rect = item.getBoundingClientRect();
+
+                if(rect.top < window.innerHeight *0.85){
+                    item.classList.add(`active`)
+                }
+            })
+        }
+
+        window.addEventListener(`scroll`,checkSlide);
+        window.addEventListener(`load`,checkSlide)
+      </script>
 
 </main>
 

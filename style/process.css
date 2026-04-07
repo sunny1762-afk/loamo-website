@@ -48,6 +48,15 @@ body{
 .process-item .text-box .en{
     margin-top: var(--space-small);
 }
+.slide-in{
+    opacity:0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.slide-in.active{
+    opacity: 1;
+    transform: translateX(0);
+}
 @media(max-width:1024px){
     .sub-banner{
         height: 400px;
