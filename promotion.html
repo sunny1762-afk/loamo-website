@@ -82,6 +82,7 @@
             })
             event1ImgSlider.on('slideChange', function () {
                 // console.log(event1ImgSlider.realIndex);
+                // 생성된이미지슬라이더가 바뀔때마다 동작이 실행됨(텍스트 슬라이더 동시이동)
                 event1TxtSlider.slideTo(event1ImgSlider.realIndex, 1000)
             });
         </script>
